@@ -17,5 +17,6 @@ return [
         ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
         ':name' => ['index/hello', ['method' => 'post']],
     ],
-    'useDB' => 'index/index/useDb'
+    'useDB' => 'index/index/useDb',
+    'addBook' => 'index/index/addBook',
 ];
