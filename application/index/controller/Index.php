@@ -19,8 +19,8 @@ class Index
 
     public function addBook()
     {
-        $result = Db::execute('insert into dede_diyform5(id,ifcheck,fast_name,fast_area,fast_colour,fast_phone)values (6,"1","测试数据","上海","旧房","13120560635")');
-        if ($result . equalTo("1")) {
+        $result = Db::execute('insert into dede_diyform5(id,ifcheck,fast_name,fast_area,fast_colour,fast_phone)values (9,"1","测试数据","上海","旧房","13120560635")');
+        if ($result == 1) {
             print_r("新建成功");
         } else {
             print_r("新建失败");
