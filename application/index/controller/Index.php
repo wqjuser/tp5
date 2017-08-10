@@ -16,4 +16,5 @@ class Index
         $data = Db::name("diyform5")->find();
         print_r($data);
     }
+
 }
