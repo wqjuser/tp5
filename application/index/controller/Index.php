@@ -14,7 +14,7 @@ class Index
     public function useDb()
     {
         $data = Db::name("diyform5")->find();
-        print_r($data);
+        return json($data);
     }
 
     public function addBook()
@@ -25,6 +25,11 @@ class Index
         } else {
             print_r("新建失败");
         }
+    }
+
+    public function chaXun()
+    {
+
     }
 
 }
