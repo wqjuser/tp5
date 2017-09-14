@@ -34,7 +34,7 @@ class Index
 
     public function post($ifcheck , $fast_name)
     {
-        return $ifcheck;
+//        return $ifcheck;
         $result = Db::execute('insert into dede_diyform5(ifcheck,fast_name,fast_area,fast_colour,fast_phone)values ($ifcheck,"试一试","上海","新房","12345678901")');
         if ($result == 1) {
             return json('新建成功' + $ifcheck);
