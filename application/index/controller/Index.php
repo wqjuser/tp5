@@ -32,4 +32,15 @@ class Index
         return json('wqj');
     }
 
+    public function post($ifchenk, $fast_name)
+    {
+        $ifcheck = input('post.ifcheck');
+        $fast_name = input('post.email');
+        $result = Db::execute('insert into dede_diyform5(id,ifcheck,fast_name,fast_area,fast_colour,fast_phone)values ("2",$ifcheck,"试一试","上海","新房","12345678901")');
+        if ($result == 1) {
+            return json('新建成功');
+        } else {
+            return json('新建失败');
+        }
+    }
 }

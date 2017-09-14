@@ -20,4 +20,5 @@ return [
     'useDB' => 'index/index/useDb',
     'addBook' => 'index/index/addBook',
     'chaXun' => 'index/index/chaXun',
+    'post' => 'index/index/post',
 ];
