@@ -32,14 +32,13 @@ class Index
         return json('wqj');
     }
 
-    public function post($ifcheck , $fast_name)
+    public function post($ifcheck, $fast_name, $fast_area, $fast_colour, $fast_phone)
     {
-//        return $ifcheck;
-        $result = Db::execute('insert into dede_diyform5(ifcheck,fast_name,fast_area,fast_colour,fast_phone)values (?,?,?,?,?)',[$ifcheck,"对不对",$fast_name,"3","1223"]);
+        $result = Db::execute('insert into dede_diyform5(ifcheck,fast_name,fast_area,fast_colour,fast_phone)values (?,?,?,?,?)', [$ifcheck, $fast_name, $fast_area, $fast_colour, $fast_phone]);
         if ($result == 1) {
-            return json('新建成功');
+            return json('预约成功');
         } else {
-            return json('新建失败');
+            return json('预约失败');
         }
     }
 
