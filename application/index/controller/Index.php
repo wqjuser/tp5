@@ -37,7 +37,7 @@ class Index
 //        return $ifcheck;
         $result = Db::execute('insert into dede_diyform5(ifcheck,fast_name,fast_area,fast_colour,fast_phone)values (?,?,?,?,?)',[$ifcheck,"对不对","上海","3","1223"]);
         if ($result == 1) {
-            return json('新建成功' + $ifcheck);
+            return json('新建成功');
         } else {
             return json('新建失败');
         }
