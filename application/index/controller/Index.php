@@ -38,7 +38,7 @@ class Index
         if ($result == 1) {
             return json(array(
                 'status' => 1,
-                'result' => 预约成功,
+                'result' => '预约成功',
 
             ));
 //            return json('预约成功');
