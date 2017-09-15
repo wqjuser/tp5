@@ -15,7 +15,7 @@ class Index
     {
         $data = Db::name("diyform5")->where('id', '>', 1)->select();
         return json(array(
-            'data' => array($data),
+            'data' => $data,
             'status' => 1,
             'result' => '预约成功',
         ));
