@@ -36,9 +36,7 @@ class Index
     {
         $result = Db::execute('insert into dede_diyform5(ifcheck,fast_name,fast_area,fast_colour,fast_phone)values (?,?,?,?,?)', [$ifcheck, $fast_name, $fast_area, $fast_colour, $fast_phone]);
         if ($result == 1) {
-            print_r('data');
             return json(array(
-
                 'status' => 1,
                 'result' => '预约成功',
             ));
