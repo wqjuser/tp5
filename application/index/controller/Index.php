@@ -16,7 +16,7 @@ class Index
         $data = Db::name("diyform5")->find();
         return json(array(
             'status' => 1,
-            'data' + $data,
+            'data' => $data,
             'result' => '预约成功',
         ));
     }
