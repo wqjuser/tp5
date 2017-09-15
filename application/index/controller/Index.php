@@ -14,7 +14,9 @@ class Index
     public function useDb()
     {
         $data = Db::name("diyform5")->find();
-        return json($data);
+        return json(array('status' => 1,
+            $data,
+            'result' => '预约成功',));
     }
 
     public function addBook()
