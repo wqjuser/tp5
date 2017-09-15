@@ -13,7 +13,7 @@ class Index
 
     public function useDb()
     {
-        $data = Db::name("diyform5")->find();
+        $data = Db::name("diyform5")->where('id','>',1);
         return json(array(
             'data' => array($data),
             'status' => 1,
