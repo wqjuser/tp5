@@ -21,4 +21,8 @@ return [
     'addBook' => 'index/index/addBook',
     'chaXun' => 'index/index/chaXun',
     'post' => 'index/index/post',
+    'login' => 'api/login/login',
+    'getBanner' => 'api/Banner/getBanner',
+    'getAd' => 'api/getAd/getAd',
+    'saveReserve' => 'api/saveReserve/saveReserve',
 ];

@@ -49,5 +49,13 @@ class Index
             return json('预约失败');
         }
     }
-
+    public function getBanner()
+    {
+        $data = Db::name("banner_urls")->where('id', '>=', 0)->select();
+        return json(array(
+            'data' => $data,
+            'status' => 1,
+            'result' => '查询成功',
+        ));
+    }
 }
