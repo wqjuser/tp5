@@ -23,6 +23,7 @@ return [
     'post' => 'index/index/post',
     'login' => 'api/login/login',
     'getBanner' => 'api/Banner/getBanner',
+    'getDesigndecorate' => 'api/Getdesigndecorate/getDesigndecorate',
     'getAd' => 'api/getAd/getAd',
-    'saveReserve' => 'api/saveReserve/saveReserve',
+    'saveReserve' => 'api/Savereserve/saveReserve',
 ];
