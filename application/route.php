@@ -24,6 +24,7 @@ return [
     'login' => 'api/login/login',
     'getBanner' => 'api/Banner/getBanner',
     'getDesigndecorate' => 'api/Getdesigndecorate/getDesigndecorate',
+    'getBlueProcess' => 'api/Getblueprocess/getBlueProcess',
     'getAd' => 'api/getAd/getAd',
     'saveReserve' => 'api/Savereserve/saveReserve',
 ];

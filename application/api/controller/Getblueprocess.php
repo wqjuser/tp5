@@ -10,18 +10,16 @@ namespace app\api\controller;
 use think\Controller;
 use think\Db;
 
-class Getdesigndecorate extends Controller
+class Getblueprocess extends Controller
 
 {
-    public function getDesigndecorate()
+    public function getBlueProcess()
     {
-        $data = Db::name("interiordesign")->where('id', '<=', 3)->select();
+        $data = Db::name("bluediamondprocess")->where('id', '<=', 3)->select();
         return json(array(
             'data' => $data,
             'status' => 1,
             'result' => '查询成功',
-
-
         ));
     }
 }
