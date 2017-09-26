@@ -20,6 +20,7 @@ class Getinfocenter extends Controller
             'data' => $data,
             'status' => 1,
             'result' => '查询成功',
+
         ));
     }
 }
