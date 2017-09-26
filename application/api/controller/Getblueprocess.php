@@ -15,7 +15,7 @@ class Getblueprocess extends Controller
 {
     public function getBlueProcess()
     {
-        $data = Db::name("bluediamondprocess")->where('id', '<=', 3)->select();
+        $data = Db::name("bluediamondprocess")->where('id', '<=', 4)->select();
         return json(array(
             'data' => $data,
             'status' => 1,
