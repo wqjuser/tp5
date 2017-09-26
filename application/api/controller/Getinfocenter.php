@@ -10,12 +10,12 @@ namespace app\api\controller;
 use think\Controller;
 use think\Db;
 
-class Getblueprocess extends Controller
+class Getinfocenter extends Controller
 
 {
-    public function getBlueProcess()
+    public function getInfoCenter()
     {
-        $data = Db::name("bluediamondprocess")->where('id', '<=', 3)->select();
+        $data = Db::name("informationcenter")->where('id', '<=', 3)->select();
         return json(array(
             'data' => $data,
             'status' => 1,
